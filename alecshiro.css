@@ -46,7 +46,7 @@
         align-items: center;
         justify-content: space-between;
         padding: 20px;
-        height: 40px;
+        min-height: 40px;
         position: sticky;
         top: 0;
         z-index: 100;
@@ -494,10 +494,29 @@
             grid-template-columns: 1fr 1fr;
         }
 
-        nav {
-            padding: 0 20px;
+       nav {
+            height: auto;
+            flex-wrap: wrap;
+            padding: 10px 16px;
         }
 
         .nav-links {
-            gap: 16px;
+            display: none; 
+        }
+
+        .nav-logo {
+            height: 50px;
+            margin-left: 0;
+        }
+
+        .features-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .footer-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .social-icons {
+            justify-content: center;
         }
